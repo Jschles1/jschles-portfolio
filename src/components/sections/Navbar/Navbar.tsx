@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NavbarLink } from "@/lib/interfaces";
+import NavbarLinkItem from "./NavbarLinkItem";
 
 const navbarData: NavbarLink[] = [
   {
@@ -29,7 +30,7 @@ const Navbar = () => {
     <nav className="md:mx-8 mb-3 px-6 py-2 z-10 sticky top-0 bg-white shadow rounded">
       <ul className="flex flex-wrap">
         {navbarData.map((el, id) => (
-          <LinkItem el={el} key={id} />
+          <NavbarLinkItem el={el} key={id} />
         ))}
       </ul>
     </nav>
@@ -37,17 +38,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-const LinkItem = (props: { el: NavbarLink }) => {
-  const { title, to } = props.el;
-  return (
-    <li className="m-3 lg:mx-5">
-      <Link
-        href={to}
-        className="text-gray-800 text-medium hover:text-blue-600 active:text-blue-600"
-      >
-        {title}
-      </Link>
-    </li>
-  );
-};
