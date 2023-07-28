@@ -3,43 +3,43 @@ import SkillItem from "./SkillItem";
 const skillData = [
   {
     id: 1,
-    title: "Html, Css, Scss",
-    percentage: "95%",
+    title: "HTML / CSS",
+    yearsExperience: 5,
   },
   {
     id: 2,
-    title: "Bootstrap",
-    percentage: "98%",
+    title: "JavaScript",
+    yearsExperience: 5,
   },
   {
     id: 3,
-    title: "TailwindCSS",
-    percentage: "90%",
+    title: "TypeScript",
+    yearsExperience: 3,
   },
   {
     id: 4,
-    title: "Javascript",
-    percentage: "70%",
+    title: "ReactJS",
+    yearsExperience: 5,
   },
   {
     id: 5,
-    title: "ReactJS",
-    percentage: "70%",
+    title: "Redux",
+    yearsExperience: 5,
   },
   {
     id: 6,
-    title: "ExpressJS",
-    percentage: "60%",
+    title: "Next.js",
+    yearsExperience: 3,
   },
   {
     id: 7,
-    title: "MongoDB",
-    percentage: "50%",
+    title: "TailwindCSS",
+    yearsExperience: 1,
   },
   {
     id: 8,
-    title: "Git, Github",
-    percentage: "80%",
+    title: "SCSS",
+    yearsExperience: 2,
   },
 ];
 
