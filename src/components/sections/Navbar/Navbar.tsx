@@ -5,7 +5,7 @@ import NavbarLinkItem from "./NavbarLinkItem";
 const navbarData: NavbarLink[] = [
   {
     id: 1,
-    title: "About",
+    title: "Skills",
     to: "/",
   },
   {

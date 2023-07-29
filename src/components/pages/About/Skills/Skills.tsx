@@ -1,6 +1,6 @@
 import SkillItem from "./SkillItem";
 
-const skillData = [
+const professionalSkillData = [
   {
     id: 1,
     title: "HTML / CSS",
@@ -31,11 +31,7 @@ const skillData = [
     title: "Next.js",
     yearsExperience: 3,
   },
-  {
-    id: 7,
-    title: "TailwindCSS",
-    yearsExperience: 1,
-  },
+
   {
     id: 8,
     title: "SCSS",
@@ -43,16 +39,95 @@ const skillData = [
   },
 ];
 
+const personalSkillData = [
+  {
+    id: 1,
+    title: "Leading Frontend Projects and Teams",
+    yearsExperience: 2,
+  },
+  {
+    id: 2,
+    title: "Mentoring Junior Developers",
+    yearsExperience: 2,
+  },
+  {
+    id: 3,
+    title: "Giving Code Reviews",
+    yearsExperience: 2,
+  },
+];
+
+const learningSkillData = [
+  {
+    id: 1,
+    title: "TailwindCSS",
+  },
+  {
+    id: 2,
+    title: "NodeJS",
+  },
+  {
+    id: 3,
+    title: "MongoDB",
+  },
+  {
+    id: 4,
+    title: "AWS Lambda",
+  },
+  {
+    id: 5,
+    title: "AWS S3",
+  },
+  {
+    id: 6,
+    title: "AWS Step Functions",
+  },
+  {
+    id: 7,
+    title: "Puppeteer",
+  },
+  {
+    id: 8,
+    title: "Python",
+  },
+];
+
 const Skills = () => {
   return (
     <div className="py-4">
+      <div className="flex flex-wrap mb-4">
+        <div className="w-full">
+          <div className="md:mx-4">
+            <h3 className="text-2xl text-gray-800 font-bold mb-4">
+              Skills I Have Professional Experience In:
+            </h3>
+          </div>
+        </div>
+        {professionalSkillData.map((skill, id) => (
+          <SkillItem skill={skill} key={id} />
+        ))}
+      </div>
+      <div className="flex flex-wrap mb-4">
+        <div className="w-full">
+          <div className="md:mx-4">
+            <h3 className="text-2xl text-gray-800 font-bold mb-4">
+              I&apos;m Also Professionally Experienced in the Practices of:
+            </h3>
+          </div>
+        </div>
+        {personalSkillData.map((skill, id) => (
+          <SkillItem skill={skill} key={id} />
+        ))}
+      </div>
       <div className="flex flex-wrap">
         <div className="w-full">
           <div className="md:mx-4">
-            <h3 className="text-2xl text-gray-800 font-bold mb-4">Skills</h3>
+            <h3 className="text-2xl text-gray-800 font-bold mb-4">
+              Skills I&apos;m Currently Learning or Using in Personal Projects:
+            </h3>
           </div>
         </div>
-        {skillData.map((skill, id) => (
+        {learningSkillData.map((skill, id) => (
           <SkillItem skill={skill} key={id} />
         ))}
       </div>

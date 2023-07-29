@@ -59,10 +59,14 @@ const Sidebar = () => {
           About Me
         </h3>
         <p className="text-gray-400 text font-light leading-relaxed">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+          I am a frontend developer with 5 years of experience with a passion
+          for building rich and seamless user interfaces for websites and
+          applications.
+        </p>
+        <br />
+        <p className="text-gray-400 text font-light leading-relaxed">
+          With a previous background as a personal trainer, I place high value
+          on consistent hard work and helping clients reach their goals.
         </p>
       </div>
     </aside>
