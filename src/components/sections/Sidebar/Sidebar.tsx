@@ -15,18 +15,13 @@ import { SocialLink } from "@/lib/interfaces";
 const socials: SocialLink[] = [
   {
     id: 1,
-    icon: <FaFacebookF />,
-    link: "#0",
+    icon: <FaGithub />,
+    link: "https://github.com/Jschles1",
   },
   {
     id: 2,
-    icon: <FaGithub />,
-    link: "#0",
-  },
-  {
-    id: 3,
     icon: <FaLinkedinIn />,
-    link: "#0",
+    link: "https://www.linkedin.com/in/john-schlesinger-21438362/",
   },
 ];
 
@@ -81,6 +76,7 @@ const SocialIcon = (props: { social: SocialLink }) => {
     <li className="m-2">
       <a
         href={link}
+        target="_blank"
         className="w-8 h-8 bg-blue-100 rounded text-blue-800 flex items-center justify-center hover:text-white hover:bg-blue-600"
       >
         {icon}
