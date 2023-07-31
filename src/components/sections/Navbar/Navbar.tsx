@@ -27,7 +27,7 @@ const navbarData: NavbarLink[] = [
 
 const Navbar = () => {
   return (
-    <nav className="md:mx-8 mb-3 px-6 py-2 z-10 sticky top-0 bg-white shadow rounded">
+    <nav className="md:mx-8 mb-3 px-6 py-2 z-20 sticky top-0 bg-white shadow rounded">
       <ul className="flex flex-wrap">
         {navbarData.map((el, id) => (
           <NavbarLinkItem el={el} key={id} />
