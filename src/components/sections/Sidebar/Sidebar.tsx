@@ -1,14 +1,5 @@
 import Image from "next/image";
-import {
-  FaBehance,
-  FaDribbble,
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaSkype,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import profile from "public/images/profile.jpg";
 import { SocialLink } from "@/lib/interfaces";
 
