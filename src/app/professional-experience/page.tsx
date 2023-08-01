@@ -47,11 +47,11 @@ function ExperienceItem({
   return (
     <div className="flex items-center gap-4 mb-8">
       <div className="w-16 h-16 z-10 items-center justify-center rounded-md text-3xl hidden md:flex">
-        <Image src={image} alt={`${company} Logo`} />
+        <div className="w-4 h-4 bg-gray-300 rounded-full"></div>
       </div>
       <div className="bg-white z-10 md:basis-[90%]">
-        <div className="flex items-center justify-between gap-x-2 md:block mb-4">
-          <div className="block md:hidden">
+        <div className="flex items-center gap-x-2 mb-4">
+          <div className="block">
             <Image src={image} alt={`${company} Logo`} width={64} height={64} />
           </div>
           <div>
@@ -61,7 +61,7 @@ function ExperienceItem({
           </div>
         </div>
 
-        <ul className="text-gray-400">
+        <ul className="text-gray-400 pl-4">
           {description.map((item) => (
             <li key={item} className="ml-2 list-item list-disc">
               {item}
@@ -78,7 +78,7 @@ export default function ProfessionalExperience() {
     <section className="pb-10">
       <div className="flex flex-wrap md:px-4">
         <div className="w-full">
-          <div className="my-4 md:mx-4 shadow p-6 rounded-md bg-white group hover:shadow-md before:content-none md:before:content-[''] before:left-14 before:top-8 before:w-[2px] before:absolute before:h-[calc(100%-4rem)] relative before:bg-gray-200">
+          <div className="my-4 md:mx-4 shadow p-6 rounded-md bg-white group hover:shadow-md before:content-none md:before:content-[''] before:left-[3.4rem] before:top-8 before:w-[2px] before:absolute before:h-[calc(100%-4rem)] relative before:bg-gray-200">
             {experienceItems.map((item) => (
               <ExperienceItem {...item} key={item.id} />
             ))}
