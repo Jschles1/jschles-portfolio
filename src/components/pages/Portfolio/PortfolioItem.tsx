@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import { FaRegEye } from "react-icons/fa";
 
 interface Props {
   portfolio: {
