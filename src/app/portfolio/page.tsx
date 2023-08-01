@@ -1,41 +1,30 @@
-import image1 from "public/images/portfolio/project-01.jpg";
-import image2 from "public/images/portfolio/project-02.jpg";
-import image3 from "public/images/portfolio/project-03.jpg";
-import image4 from "public/images/portfolio/project-04.jpg";
+import image1 from "public/images/portfolio/herbhub.png";
+import image2 from "public/images/portfolio/quicknote.png";
 import PortfolioItem from "@/components/pages/Portfolio/PortfolioItem";
 
 const portfolioData = [
   {
     id: 1,
     image: image1,
-    title: "Space Bootstrap 5 Multipurpose Template",
-    link: "#0",
-    description:
-      "Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.",
+    title: "HerbHub",
+    link: "https://github.com/Jschles1/herbhub-client",
+    website: "https://herbhub-client.vercel.app/",
+    description: [
+      "Aggregation website for listing all marijuana dispensary products available in New Jersey dispensaries with the ability for users to sort products by dispensary location, product brand, etc.",
+      "Frontend built with NextJS, Typescript, Mantine UI, React Query and Prisma Client.",
+      "Utilizes AWS Lambda, AWS Step Functions and AWS EventBridge scheduler for running Puppeteer web crawlers to retrieve product information from each NJ dispensary website and save it to a MongoDB database on a daily basis.",
+    ],
   },
   {
     id: 2,
     image: image2,
-    title: "eCommerce HTML Bootstrap 5 UI Kit",
-    link: "#0",
-    description:
-      "Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.",
-  },
-  {
-    id: 3,
-    image: image3,
-    title: "Basic – Tailwind CSS Template",
-    link: "#0",
-    description:
-      "Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.",
-  },
-  {
-    id: 4,
-    image: image4,
-    title: "Gearix Car repair App",
-    link: "#0",
-    description:
-      "Lorem ipsum dolor sit aconsect dipisicing elit, sed do eiusmod to incididunt uabore etdolore magna aliqua.",
+    title: "QuickNote",
+    link: "https://github.com/Jschles1/notes-tw",
+    website: "https://quicknote-app.vercel.app/",
+    description: [
+      "Full-Stack iOS Notes app clone that allows users to create, update, delete and sort notes using a rich text editor.",
+      "Built with T3 Stack (Next.js, Typescript, TailwindCSS, tRPC) and PostgreSQL.",
+    ],
   },
 ];
 

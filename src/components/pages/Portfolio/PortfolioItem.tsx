@@ -6,11 +6,12 @@ interface Props {
     image: StaticImageData;
     title: string;
     link: string;
-    description: string;
+    website: string;
+    description: string | string[];
   };
 }
 export default function PortfolioItem(props: Props) {
-  const { image, title, link, description } = props.portfolio;
+  const { image, title, link, website, description } = props.portfolio;
   return (
     <div className="w-full lg:w-1/2">
       <div className="my-4 md:mx-4 shadow p-6 rounded-md bg-white group hover:shadow-md">
@@ -27,16 +28,54 @@ export default function PortfolioItem(props: Props) {
                   href={link}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-12 h-10 text-xl text-blue-600 flex items-center justify-center border-2 border-blue-600 rounded hover:text-white hover:bg-blue-600"
+                  className="w-auto mb-4 p-2 h-10 text-md text-blue-600 flex items-center justify-center border-2 border-blue-600 rounded hover:text-white hover:bg-blue-600"
                 >
-                  <FaRegEye />
+                  View Code
+                </a>
+
+                <a
+                  href={website}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-auto p-2 h-10 text-md text-blue-600 flex items-center justify-center border-2 border-blue-600 rounded hover:text-white hover:bg-blue-600"
+                >
+                  View Live Site
                 </a>
               </li>
             </ul>
           </div>
         </div>
         <h3 className="text-lg font-medium text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-400">{description}</p>
+        {typeof description === "object" ? (
+          <ul className="text-gray-400 pl-4">
+            {description.map((item) => (
+              <li key={item} className="ml-2 list-item list-disc">
+                {item}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-gray-400">{description}</p>
+        )}
+        <div className="block md:hidden mt-4">
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="block w-auto mb-4 rounded bg-blue-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-blue-800"
+          >
+            View Code
+          </a>
+
+          <a
+            href={website}
+            target="_blank"
+            rel="noreferrer"
+            className="block w-auto rounded bg-blue-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-blue-800"
+          >
+            View Live Site
+          </a>
+        </div>
       </div>
     </div>
   );
