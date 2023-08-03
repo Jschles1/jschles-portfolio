@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
 import profile from "public/images/profile.jpg";
 import { SocialLink } from "@/lib/interfaces";
 
@@ -17,6 +20,32 @@ const socials: SocialLink[] = [
 ];
 
 const Sidebar = () => {
+  function download(blob: Blob) {
+    console.log("Downloading...");
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.style.display = "none";
+    a.href = url;
+    a.download = "john-schlesinger-resume.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+    console.log("Downloaded");
+    toast.success("Resume downloaded successfully!");
+  }
+
+  const handleDownload = async () => {
+    const response = await fetch("/api/download");
+    if (response.status === 200) {
+      console.log("Response received");
+      const blob = await response.blob();
+      download(blob);
+    } else {
+      toast.error("Error downloading resume. Please try again later.");
+    }
+  };
+
   return (
     <aside className="sticky top-0 bg-white md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
       <div className="w-24 h-24 rounded-md overflow-hidden mx-auto mb-5">
@@ -27,13 +56,12 @@ const Sidebar = () => {
           John Schlesinger
         </h1>
         <p className="text-sm text-gray-400 mb-3">Senior Frontend Developer</p>
-        <a
-          href="#0"
+        <button
           className="inline-block mb-3 rounded bg-blue-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-blue-800"
-          download="Resume"
+          onClick={handleDownload}
         >
           Download Resume
-        </a>
+        </button>
         <ul className="flex flex-wrap justify-center">
           {socials.map((social, id) => (
             <SocialIcon social={social} key={id} />

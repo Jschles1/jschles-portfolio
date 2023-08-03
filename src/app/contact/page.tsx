@@ -6,7 +6,7 @@ import * as z from "zod";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Input from "@/components/pages/Contact/Input";
 import Modal from "@/components/pages/Contact/Modal";
@@ -138,7 +138,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <ToastContainer />
         </form>
       </div>
       {showModal && (
