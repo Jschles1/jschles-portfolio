@@ -32,7 +32,7 @@ const Sidebar = () => {
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
     console.log("Downloaded");
-    toast.success("Resume downloaded successfully!");
+    // toast.success("Resume downloaded successfully!");
   }
 
   const handleDownload = async () => {
@@ -42,7 +42,7 @@ const Sidebar = () => {
       const blob = await response.blob();
       download(blob);
     } else {
-      toast.error("Error downloading resume. Please try again later.");
+      // toast.error("Error downloading resume. Please try again later.");
     }
   };
 

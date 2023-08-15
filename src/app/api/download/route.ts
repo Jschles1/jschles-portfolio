@@ -1,5 +1,7 @@
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 
+const revalidate = 0;
+
 const awsConfig = {
   region: process.env.MY_AWS_REGION as string,
   credentials: {
