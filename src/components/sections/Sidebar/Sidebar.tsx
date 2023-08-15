@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify";
+// import { ToastContainer, toast } from "react-toastify";
 import profile from "public/images/profile.jpg";
 import { SocialLink } from "@/lib/interfaces";
 
