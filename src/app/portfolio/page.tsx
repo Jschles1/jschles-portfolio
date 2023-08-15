@@ -22,7 +22,7 @@ const portfolioData = [
     link: "https://github.com/Jschles1/notes-tw",
     website: "https://quicknote-app.vercel.app/",
     description: [
-      "Full-Stack iOS Notes app clone that allows users to create, update, delete and sort notes using a rich text editor.",
+      "Single page application that allows users to create, update, and delete notes through a rich text editor.",
       "Built with T3 Stack (Next.js, Typescript, TailwindCSS, tRPC) and PostgreSQL.",
     ],
   },
