@@ -45,7 +45,7 @@ function ExperienceItem({
   image,
 }: ExperienceItemData) {
   return (
-    <div className="flex items-center gap-4 mb-8">
+    <div className="flex items-center gap-4 mb-8 last-of-type:mb-0">
       <div className="w-16 h-16 z-10 items-center justify-center rounded-md text-3xl hidden md:flex">
         <div className="w-4 h-4 bg-gray-300 rounded-full"></div>
       </div>
