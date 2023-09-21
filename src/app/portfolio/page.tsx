@@ -1,4 +1,4 @@
-import image1 from "public/images/portfolio/herbhub.png";
+import image1 from "public/images/portfolio/mentormaps.png";
 import image2 from "public/images/portfolio/quicknote.png";
 import PortfolioItem from "@/components/pages/Portfolio/PortfolioItem";
 
@@ -6,13 +6,12 @@ const portfolioData = [
   {
     id: 1,
     image: image1,
-    title: "HerbHub",
-    link: "https://github.com/Jschles1/herbhub-client",
-    website: "https://herbhub-client.vercel.app/",
+    title: "MentorMaps",
+    link: "https://github.com/Jschles1/mentormaps",
+    website: "https://mentormaps.vercel.app/",
     description: [
-      "Aggregation website for listing all marijuana dispensary products available in New Jersey dispensaries with the ability for users to sort products by dispensary location, product brand, etc.",
-      "Frontend built with NextJS, Typescript, Mantine UI, React Query and Prisma Client.",
-      "Utilizes AWS Lambda, AWS Step Functions and AWS EventBridge scheduler for running Puppeteer web crawlers to retrieve product information from each NJ dispensary website and save it to a MongoDB database on a daily basis.",
+      "Web application that allows mentors guide mentees towards their career or personal goals through the creation of roadmaps and milestones.",
+      "Built with NextJS 13, Typescript, TailwindCSS, Shadcn UI, React Query, Clerk and Prisma.",
     ],
   },
   {
