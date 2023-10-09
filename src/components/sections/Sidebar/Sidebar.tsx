@@ -21,7 +21,6 @@ const socials: SocialLink[] = [
 
 const Sidebar = () => {
   function download(blob: Blob) {
-    console.log("Downloading...");
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.style.display = "none";
@@ -31,8 +30,6 @@ const Sidebar = () => {
     a.click();
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
-    console.log("Downloaded");
-    // toast.success("Resume downloaded successfully!");
   }
 
   const handleDownload = async () => {
@@ -73,14 +70,13 @@ const Sidebar = () => {
           About Me
         </h3>
         <p className="text-gray-400 text font-light leading-relaxed">
-          I am a frontend developer with 5 years of experience with a passion
-          for building rich and seamless user interfaces for websites and
-          applications.
+          Experienced frontend developer helping companies build rich and
+          seamless user interfaces for websites and applications.
         </p>
         <br />
         <p className="text-gray-400 text font-light leading-relaxed">
-          With a previous background as a personal trainer, I place high value
-          on consistent hard work and helping clients reach their goals.
+          With my background as a personal trainer, I place high value on
+          consistency and hard work, and helping clients reach their goals.
         </p>
       </div>
     </aside>

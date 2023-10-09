@@ -37,58 +37,60 @@ const professionalSkillData = [
     title: "SCSS",
     yearsExperience: 2,
   },
-];
-
-const personalSkillData = [
   {
-    id: 1,
+    id: 9,
     title: "Leading Frontend Projects and Teams",
     yearsExperience: 2,
   },
   {
-    id: 2,
+    id: 10,
     title: "Mentoring Junior Developers",
     yearsExperience: 2,
   },
   {
-    id: 3,
+    id: 11,
     title: "Giving Code Reviews",
     yearsExperience: 2,
   },
-];
-
-const learningSkillData = [
   {
-    id: 1,
+    id: 12,
     title: "TailwindCSS",
+    yearsExperience: 1,
   },
   {
-    id: 2,
+    id: 13,
     title: "NodeJS",
+    yearsExperience: 1,
   },
   {
-    id: 3,
+    id: 14,
     title: "MongoDB",
+    yearsExperience: 2,
   },
   {
-    id: 4,
+    id: 15,
     title: "AWS Lambda",
+    yearsExperience: 1,
   },
   {
-    id: 5,
+    id: 16,
     title: "AWS S3",
+    yearsExperience: 1,
   },
   {
-    id: 6,
+    id: 17,
     title: "AWS Step Functions",
+    yearsExperience: 1,
   },
   {
-    id: 7,
+    id: 18,
     title: "Puppeteer",
+    yearsExperience: 1,
   },
   {
-    id: 8,
+    id: 19,
     title: "Python",
+    yearsExperience: 1,
   },
 ];
 
@@ -99,35 +101,11 @@ const Skills = () => {
         <div className="w-full">
           <div className="md:mx-4">
             <h3 className="text-2xl text-gray-800 font-bold mb-4">
-              Skills I Have Professional Experience In:
+              My Skills:
             </h3>
           </div>
         </div>
         {professionalSkillData.map((skill, id) => (
-          <SkillItem skill={skill} key={id} />
-        ))}
-      </div>
-      <div className="flex flex-wrap mb-4">
-        <div className="w-full">
-          <div className="md:mx-4">
-            <h3 className="text-2xl text-gray-800 font-bold mb-4">
-              I&apos;m Also Professionally Experienced in the Practices of:
-            </h3>
-          </div>
-        </div>
-        {personalSkillData.map((skill, id) => (
-          <SkillItem skill={skill} key={id} />
-        ))}
-      </div>
-      <div className="flex flex-wrap">
-        <div className="w-full">
-          <div className="md:mx-4">
-            <h3 className="text-2xl text-gray-800 font-bold mb-4">
-              Skills I&apos;m Currently Learning or Using in Personal Projects:
-            </h3>
-          </div>
-        </div>
-        {learningSkillData.map((skill, id) => (
           <SkillItem skill={skill} key={id} />
         ))}
       </div>
