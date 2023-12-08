@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/sections/Navbar/Navbar";
 import ProfileCover from "../components/sections/ProfileCover/ProfileCover";
 import Sidebar from "../components/sections/Sidebar/Sidebar";
@@ -40,6 +40,7 @@ export default function RootLayout({
           <div id="modal-root"></div>
           <ToastContainer />
         </main>
+        <Analytics />
       </body>
     </html>
   );
