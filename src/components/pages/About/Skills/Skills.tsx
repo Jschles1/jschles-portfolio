@@ -69,26 +69,16 @@ const professionalSkillData = [
   },
   {
     id: 15,
-    title: "AWS Lambda",
+    title: "Amazon Web Services",
     yearsExperience: 1,
   },
   {
     id: 16,
-    title: "AWS S3",
-    yearsExperience: 1,
-  },
-  {
-    id: 17,
-    title: "AWS Step Functions",
-    yearsExperience: 1,
-  },
-  {
-    id: 18,
     title: "Puppeteer",
     yearsExperience: 1,
   },
   {
-    id: 19,
+    id: 17,
     title: "Python",
     yearsExperience: 1,
   },
