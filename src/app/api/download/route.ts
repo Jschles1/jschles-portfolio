@@ -16,7 +16,7 @@ export async function GET() {
   try {
     const getCommand: GetObjectCommand = new GetObjectCommand({
       Bucket: process.env.MY_AWS_BUCKET_NAME,
-      Key: "john-schlesinger-resume-2023.pdf",
+      Key: "john-schlesinger-resume-2024.pdf",
     });
 
     const data = await s3.send(getCommand);
@@ -26,7 +26,7 @@ export async function GET() {
         headers: {
           "Content-Type": "application/pdf",
           "Content-Disposition":
-            "attachment; filename=john-schlesinger-resume-2023.pdf",
+            "attachment; filename=john-schlesinger-resume-2024.pdf",
         },
         status: 200,
         statusText: "OK",
