@@ -4,32 +4,32 @@ const professionalSkillData = [
   {
     id: 1,
     title: "HTML / CSS",
-    yearsExperience: 5,
+    yearsExperience: 6,
   },
   {
     id: 2,
     title: "JavaScript",
-    yearsExperience: 5,
+    yearsExperience: 6,
   },
   {
     id: 3,
     title: "TypeScript",
-    yearsExperience: 3,
+    yearsExperience: 4,
   },
   {
     id: 4,
     title: "ReactJS",
-    yearsExperience: 5,
+    yearsExperience: 6,
   },
   {
     id: 5,
     title: "Redux",
-    yearsExperience: 5,
+    yearsExperience: 6,
   },
   {
     id: 6,
     title: "Next.js",
-    yearsExperience: 3,
+    yearsExperience: 4,
   },
 
   {
@@ -55,17 +55,17 @@ const professionalSkillData = [
   {
     id: 12,
     title: "TailwindCSS",
-    yearsExperience: 1,
+    yearsExperience: 2,
   },
   {
     id: 13,
     title: "NodeJS",
-    yearsExperience: 1,
+    yearsExperience: 2,
   },
   {
     id: 14,
     title: "MongoDB",
-    yearsExperience: 2,
+    yearsExperience: 3,
   },
   {
     id: 15,
