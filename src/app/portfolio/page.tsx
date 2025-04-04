@@ -13,7 +13,7 @@ let portfolioData = [
     image: image4,
     title: "Audiophile",
     link: "https://github.com/Jschles1/audiophile",
-    website: "https://quicknote-app.vercel.app/",
+    website: "https://audiophile-alpha-mocha.vercel.app/",
     description: [
       "Mock e-commerce application for audio equipment. Built to mimic the functionality and experience of a real e-commerce site.",
       "Built with Next.js 13, Typescript, TailwindCSS, Shadcn UI, React Query, Prisma and PostgreSQL.",
