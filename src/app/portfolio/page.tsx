@@ -31,17 +31,6 @@ let portfolioData = [
     ],
   },
   {
-    id: 3,
-    image: image3,
-    title: "Garden State Herbhub",
-    link: "https://github.com/Jschles1/herbhub-client",
-    website: "https://www.gardenstateherbhub.com/",
-    description: [
-      "Aggregation website for listing all cannabis dispensary products available in New Jersey dispensaries with the ability for users to find and sort products by dispensary location, product brand, price, etc.",
-      "Built with Next.js, Typescript, Mantine UI, React Query and Drizzle ORM, with product data saved to a PostgreSQL database.",
-    ],
-  },
-  {
     id: 2,
     image: image2,
     title: "QuickNote",
